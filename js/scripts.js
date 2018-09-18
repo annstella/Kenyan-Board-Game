@@ -4,7 +4,7 @@ let player;
 function setup() {
     createCanvas(400,400);
 
-    let resolution = 100;
+    let resolution = 40;
     let cols = width / resolution;
     let rows = height / resolution;
     
@@ -19,9 +19,10 @@ function setup() {
            dir *= -1;
            x += resolution * dir;
            y -= resolution;
-        }
-        
+        }       
     }
+
+    player = new Player();
 }
 
 function draw() {
@@ -30,4 +31,17 @@ function draw() {
     for (let tile of tiles) {
         tile.show();
     }
+
+    player.roll();
+
+    if (player.spot >= tiles.length-1) {
+     player.spot = tiles.length-1;
+     console.log('game over'); 
+     noLoop(); 
+    }
+
+    player.show(tiles);
+
+    
+    
 }
