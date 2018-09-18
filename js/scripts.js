@@ -2,9 +2,9 @@ let tiles = [];
 let player;
 
 function setup() {
-    createCanvas(400,400);
+    createCanvas(600,600);
 
-    let resolution = 40;
+    let resolution = 60;
     let cols = width / resolution;
     let rows = height / resolution;
     
@@ -31,17 +31,15 @@ function draw() {
     for (let tile of tiles) {
         tile.show();
     }
-
-    player.roll();
-
+    
+    // player.roll();
+    
     if (player.spot >= tiles.length-1) {
      player.spot = tiles.length-1;
      console.log('game over'); 
      noLoop(); 
     }
+ 
 
-    player.show(tiles);
-
-    
-    
+    player.show(tiles);    
 }
