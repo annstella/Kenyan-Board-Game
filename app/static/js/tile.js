@@ -25,7 +25,7 @@ class Tile {
         fill(this.color);
         rect(this.x, this.y, this.wh, this.wh);
         fill(255);
-        textSize(32);
+        textSize(25);
         text( this.next,this.x,this.y + this.wh)
     }
 }
