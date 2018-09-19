@@ -7,7 +7,10 @@ class Tile {
         this.next = next;
         if (this.index % 2 == 0){
             this.color =200; //change color of grid
-        } else {
+        } else if (this.index % 5 == 0) {
+            this.color = 150;
+        }
+         else {
             this.color =100; 
         }   
     }
@@ -21,8 +24,8 @@ class Tile {
     show() {
         fill(this.color);
         rect(this.x, this.y, this.wh, this.wh);
-        //fill(255);
-        //textSize(32);
-        //text(this.index + '-->' + this.next,this.x,this.y + this.wh)
+        fill(255);
+        textSize(32);
+        text( this.next,this.x,this.y + this.wh)
     }
 }
