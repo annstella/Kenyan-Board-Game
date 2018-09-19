@@ -1,9 +1,20 @@
 var game_on = true;
-
+var q_count = 0;
 class Player {
     constructor() {
         this.spot = 0;
     };
+
+    roll() {
+        let die1 = document.getElementById('die1');
+        let status = document.getElementById('status'); 
+        let r = floor(random(1,7));
+        // let r =Math.floor(Math.random() * 6)
+        this.spot += r;
+        return die1.innerHTML = r;
+        // status.innerHTML = "You rolled "+r+"";
+
+    }
 
     question() {
         var questions = [
@@ -48,21 +59,29 @@ class Player {
                 answer: "a"
             },
         ]
+
+        
+       
         while (game_on) {
-            for(var i = 0; i< questions.length; i++){
-                var response = window.prompt(questions[i].prompt)
-                if(response == questions[i].answer){
-                    alert("correct");
-                    player.roll();
+            for(var i = 0; i< 5; i++){
+
+                // console.log(i);
+                
+                var response = window.prompt(questions[floor(random(1,6))].prompt)
+        
                     
-                }  else {
-                    alert("WRONG!!");
-                }
+            if(response != questions[i].answer){
+                alert("WRONG!!");
                
-                }
+                // 
+            }  else {
+                alert("Correct!!");
+               return player.roll();
+            }
         }
         
-        alert("You got" + r + "/" + questions.length);
+           }
+        // alert("You got" + r + "/" + questions.length);
         
     //    var userPrompt=prompt("Name one President of Kenya: ");
     //    var pres=["Mwai Kibaki","Jomo Kenyatta","Uhuru Kenyatta","Daniel Moi"];
@@ -81,17 +100,6 @@ class Player {
 
     }
     
-   
-    roll() {
-        let die1 = document.getElementById('die1');
-        let status = document.getElementById('status'); 
-        let r = floor(random(1,7));
-        // let r =Math.floor(Math.random() * 6)
-        this.spot += r;
-        return die1.innerHTML = r;
-        // status.innerHTML = "You rolled "+r+"";
-
-    }
     
     show(tile) {
         let current = tiles[this.spot];
