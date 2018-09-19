@@ -39,17 +39,6 @@ var questions = [
         prompt:"10. What was the name of the movie based on a true story of 'the man eaters of Tsavo' starring Michael Douglas?\n(a) The man eaters of Tsavo\n(b) The Ghost and the Darkness\n(c)The Lion who ate people\n\n",
         answer: "a"
     },
-    
-
-
-
-
-
-
-
-
-
-
 ]
 var score = 0;
 
