@@ -1,11 +1,15 @@
 import os
 
 class Config:
+<<<<<<< HEAD
 
-    # MOVIE_API_BASE_URL ='https://api.themoviedb.org/3/movie/{}?api_key={}'
-    # MOVIE_API_KEY = os.environ.get('MOVIE_API_KEY')
-    SECRET_KEY = os.environ.get('stella')
+    SECRET_KEY = os.environ.get('SECRET_KEY')
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://annstella:sterun@localhost/game'
 
+
+=======
+   pass
+>>>>>>> 5494f6e1f00461f4b68734a1820245098ac55d3c
 
 class ProdConfig(Config):
     pass
@@ -17,4 +21,8 @@ class DevConfig(Config):
 config_options = {
 'development':DevConfig,
 'production':ProdConfig
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 5494f6e1f00461f4b68734a1820245098ac55d3c
