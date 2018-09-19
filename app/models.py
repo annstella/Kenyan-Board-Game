@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from . import db
 from werkzeug.security import generate_password_hash,check_password_hash
 from flask_login import UserMixin
@@ -32,3 +33,6 @@ class User(UserMixin,db.Model):
 
     def verify_password(self,password):
         return check_password_hash(self.pass_secure,password)
+=======
+
+>>>>>>> 5494f6e1f00461f4b68734a1820245098ac55d3c
