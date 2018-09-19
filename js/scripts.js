@@ -1,5 +1,6 @@
 let tiles = [];
 let player;
+<<<<<<< HEAD
  function setup() {
     createCanvas(600,600);
     createCanvas(700,700);
@@ -7,6 +8,16 @@ let player;
     let resolution = 70;
     let cols = width / resolution;
     let rows = height / resolution;
+=======
+
+function setup() {
+    createCanvas(600,600);
+
+    let resolution = 60;
+    let cols = width / resolution;
+    let rows = height / resolution;
+    
+>>>>>>> development
     let x = 0;
     let y = (rows-1) * resolution;
     let dir = 1;
@@ -31,7 +42,11 @@ function draw() {
         tile.show();
     }
     
+<<<<<<< HEAD
     // player.roll();
+=======
+    //player.roll();
+>>>>>>> development
     
     if (player.spot >= tiles.length-1) {
      player.spot = tiles.length-1;
@@ -42,4 +57,7 @@ function draw() {
 
     player.show(tiles);    
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> development
