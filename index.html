@@ -1,39 +1,11 @@
 <!DOCTYPE html>
-
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
-
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/5.5.0/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/5.5.0/firebase-auth.js"></script>
-    <script defer src="/__/firebase/5.5.0/firebase-database.js"></script>
-    <script defer src="/__/firebase/5.5.0/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/5.5.0/firebase-storage.js"></script>
-    <script defer src="/__/firebase/5.5.0/firebase-firestore.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/bootsrtap.css"/>
-    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css"/>
-  </head>
-
+    <head>
+        <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css"/>
+        <link rel="stylesheet" href="css/bootsrtap.css"/>
+    </head>
     <body>
-        <div class="container-fluid" style="font-style:italic;">
-
-        <div class="row">
-            <div class="col-md-6">
-                <h1 style="font-weight:1000;">Kenyan Board Game</h1>
-            </div>
-            <div class="col-md-3"> </div>
-            <div class="col-md-3">
-                <button class="btn btn-primary" onclick="googleLogin()">Login with Google</button>
-            </div>
-
-        </div>
-
+        <div class="container">
+        <h1>Kenyan Board Game</h1>
           <div id="background"></div>
 
          <div id="wrapper">
@@ -94,21 +66,18 @@
 
 
          <div class ="thegame">
-             <h1 style="text-decoration:underline; margin-top:-100px;font-weight:800;">About the game</h1>
+             <h1>About the game</h1>
 
-                <h3 style="font-weight:600; margin-left:10px;">Roll the dice and learn a lot about our country Kenya</h3>
-          <br>
-          <br>
-          <br>
-          <br>
-         <h1 style="text-decoration:underline; font-weight:700;" >How to Play</h1>
+                <h3>Have fun and learn alot about our country Kenya by playing our Board Game</h3>
+
+         <h1>How to Play</h1>
          <ul><h3>
-             <li>Sign In with your Google credentials</li>
-             <li><a href="grid.html">Click on link to access gamepage</a></li>
+             <li>Sign up to register your account with us</li>
+             <li>Sign In with your credentials</li>
              <li>Roll dice</li>
              <li>Answer interesting and informative questions about Kenya</li>
-             <li>Move along the board by answering questions correctly</li>
-             <li>Reach the top of the board</li>
+             <li>Move along the board</li>
+             <li>Reach the top and finish the game</li>
          </h3>
         </ul>
      </div>
@@ -116,5 +85,9 @@
      </div>
 
     </body>
-    <script src="js/app.js"></script>
+    <script src="js/p5.js"></script>
+    <script src="js/p5.dom.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/tile.js"></script>
+    <script src="js/player.js"></script>
 </html>
