@@ -1,7 +1,6 @@
 from flask import Flask
 from flask_bootstrap import Bootstrap
 from config import config_options
-<<<<<<< HEAD
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager
 from flask_simplemde import SimpleMDE
@@ -27,19 +26,11 @@ def create_app(config_name):
     '''
 
     # Initialising application
-=======
-
-bootstrap = Bootstrap()
-
-def create_app(config_name):
-
->>>>>>> 5494f6e1f00461f4b68734a1820245098ac55d3c
     app = Flask(__name__)
 
     # Creating the app configurations
     app.config.from_object(config_options[config_name])
 
-<<<<<<< HEAD
 
     # Initialising flask extensions
     bootstrap.init_app(app)
@@ -61,13 +52,3 @@ def create_app(config_name):
     # configure_request(app)
 
     return app
-=======
-    # Initializing flask extensions
-    bootstrap.init_app(app)
-
-    # Registering the blueprint
-    from .main import main as main_blueprint
-    app.register_blueprint(main_blueprint)
-
-    return app
->>>>>>> 5494f6e1f00461f4b68734a1820245098ac55d3c
