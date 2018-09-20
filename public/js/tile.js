@@ -6,12 +6,14 @@ class Tile {
         this.index = index;
         this.next = next;
         if (this.index % 2 == 0){
-            this.color =200; //change color of grid
+            this.color =150; //change color of grid
         } else if (this.index % 5 == 0) {
-            this.color = 150;
+            this.color = 120;
+        } else if (this.index % 3 == 0) {
+            this.color = 60;
         }
          else {
-            this.color =100; 
+            this.color =40; 
         }   
     }
 
@@ -24,7 +26,7 @@ class Tile {
     show() {
         fill(this.color);
         rect(this.x, this.y, this.wh, this.wh);
-        fill(255);
+        fill(220);
         textSize(25);
         text( this.next,this.x,this.y + this.wh)
     }

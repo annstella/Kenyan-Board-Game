@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", event => {
 
     const app= firebase.app();
-    console.log(app)
+    
 });
 
 function googleLogin() {
@@ -11,8 +11,9 @@ function googleLogin() {
 
         .then(result => {
             const user = result.user;
-            document .write(`Hello ${user.displayName}`);
-            document .write(`grid.html`);
+            document .write(`<body style="background-image=url('images/kenyan-flag.jpg');">
+            <a href="grid.html" style="font-size:35px; font-style:Italic; margin-left:150px; margin-top:-200px;" >Hey ${user.displayName}!!! Let's Play!!!</a>
+            </body>`);
 
             console.log(user)
         })

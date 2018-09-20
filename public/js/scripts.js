@@ -2,7 +2,8 @@ let tiles = [];
 let player;
 
 function setup() {
-    createCanvas(600,600);
+    canvas = createCanvas(600,600);
+    canvas.parent('game');
     let resolution = 60;
     let cols = width / resolution;
     let rows = height / resolution;
