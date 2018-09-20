@@ -67,7 +67,7 @@ class Player {
 
                 // console.log(i);
                 
-                var response = window.prompt(questions[floor(random(1,12))].prompt)
+                var response = window.prompt(questions[floor(random(1,11))].prompt)
         
                     
             if(response != questions[i].answer){

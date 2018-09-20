@@ -36,7 +36,7 @@ function draw() {
     
     if (player.spot >= tiles.length-1) {
      player.spot = tiles.length-1;
-     console.log('game over'); 
+     alert('game over'); 
      noLoop(); 
     }
  
