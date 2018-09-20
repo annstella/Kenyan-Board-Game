@@ -8,11 +8,11 @@ class Tile {
         if (this.index % 2 == 0){
             this.color =200; //change color of grid
         } else if (this.index % 5 == 0) {
-            this.color = 150;
-        }
+            this.color = 150;}
+
          else {
-            this.color =100; 
-        }   
+            this.color =100;
+        }
     }
 
     getCenter() {
