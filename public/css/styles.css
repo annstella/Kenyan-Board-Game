@@ -250,5 +250,6 @@ label[for=secondroll] {
 }
 .thegame{
 	text-align: left;
-	color: black;
+    color: black;
+    font-size: 30px;
 }
