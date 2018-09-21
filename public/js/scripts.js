@@ -31,7 +31,6 @@ function draw() {
         tile.show();
     }
     
-    // player.roll();
     
     if (player.spot >= tiles.length-1) {
      player.spot = tiles.length-1;

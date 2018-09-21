@@ -6,7 +6,7 @@ class Tile {
         this.index = index;
         this.next = next;
         if (this.index % 2 == 0){
-            this.color =150; //change color of grid
+            this.color =150;
         } else if (this.index % 5 == 0) {
             this.color = 120;
         } else if (this.index % 3 == 0) {
