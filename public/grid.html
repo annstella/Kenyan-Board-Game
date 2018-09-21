@@ -1,0 +1,46 @@
+<head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <style>
+            div.dice {
+                float:left;
+                width:60px;
+                height:60px;
+                background: lightgreen;
+                border: darkgreen 7px solid;
+                padding: 10px;
+                font-size: 24px;
+                text-align: center;
+                margin: 5px;
+                
+            }
+        </style>
+        
+    </head>
+    <body style="background-image: url('images/kenyan-flag.jpg'); background-size:cover;">
+        <a href="index.html"><h1 style="text-decoration:underline; margin-left:70px; font-style:italic;
+        font-weight:1000; margin-bottom:10px; color:green">KENYAN BOARDGAME</h1></a>
+        <div class="row">
+            <br>
+            <div class="col-md-3" style="margin-top:200px; margin-left:40px; margin-right:-100px;">
+                    <button class="btn btn-danger" onclick="player.question()">Role Dice</button>
+                    <div id="die1" class="dice">
+                        <h1>0</h1>
+                    </div>
+                    
+                
+            </div>
+            <div class"col-md-9"  id="game"></div>
+        </div>
+        <br>
+        
+               
+        <br>
+        
+        <h2 id="status" style="clear:left;"></h2>
+    </body>
+    <script src="js/p5.js"></script>
+    <script src="js/p5.dom.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.0/firebase.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/tile.js"></script>
+    <script src="js/player.js"></script>
